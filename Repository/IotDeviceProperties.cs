@@ -8,10 +8,10 @@ namespace DotNetIot.Repository.IotDeviceProperties
 {
     public class IotDeviceProperties
     {
-        private static string connectionString="HostName=myiothub18.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=sFijofMUOev5eo1v3+LEi5wldjT6aTfK521rR0OzHoA=";
+        private static string connectionString="HostName=iotdevicetelemtry.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=YSYsZXs0EDonmB+fBq1etoEnmxKJlZXLPPxDhIK43hc=";
         public static RegistryManager registryManager=RegistryManager.CreateFromConnectionString(connectionString);
         public static DeviceClient client=null;
-        public static string myDeviceConnection="HostName=myiothub18.azure-devices.net;DeviceId=myiot98;SharedAccessKey=KTMcLqlJbD6O3lRcUEmLDK0OhXUGg21RAabn/ANnEhw=";
+        public static string myDeviceConnection="HostName=iotdevicetelemtry.azure-devices.net;DeviceId=iotdevice;SharedAccessKey=uDYKkIZW8ynO5nCpiJdPoJEc/YTFRlmHeayO43ieUw8=";
         public static async Task AddReportedPropertiesAsync(string deviceName,ReportedProperties properties)
         {
             if(string.IsNullOrEmpty(deviceName))
